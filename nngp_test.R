@@ -29,7 +29,7 @@ stan_fit_vb <- vb(stan_model, data=data_nngp, output_samples=1000, seed=123,init
 #------------------------------ run MCMC with NUTS -----------------------------#
 
 samples <- stan(
-  file = "/Volumes/sghosh/NEcorridor/hierarchicalBayes/nngp_stan/nngp_test.stan",
+  file = "~/nngp_test.stan",
   data = data_nngp,
   init = myinits,
   pars = parameters,
